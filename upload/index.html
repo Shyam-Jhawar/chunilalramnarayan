@@ -1,0 +1,573 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>CHUNILAL RAMNARAYAN — Sarees, Garments &amp; Fabrics, Midnapore</title>
+<meta name="description" content="Exclusive Saree Showroom. Sarees, ladies' and gents' garments, furnishing and cloth by the metre. Barabazar, Midnapore, Paschim Medinipur, West Bengal 721101. Open 10am to 9pm, Thursday closed.">
+
+<meta property="og:title" content="CHUNILAL RAMNARAYAN — Sarees, Garments &amp; Fabrics">
+<meta property="og:description" content="Barabazar, Midnapore. Sarees, ladies' and gents' garments, furnishing and cloth by the metre.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Hind:wght@400;500;600&family=Noto+Serif+Bengali:wght@600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --wine:#5C1224;
+    --wine-deep:#3F0C18;
+    --ivory:#EFE3C8;
+    --ivory-lift:#F7EFDC;
+    --gold:#B8873B;
+    --gold-bright:#D2A24C;
+    --indigo:#21375C;
+    --ink:#2A1A18;
+    --border-h:24px;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+
+  body{
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:'Hind',system-ui,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+
+  /* ── temple border: the signature ── */
+  .selvedge{
+    height:var(--border-h);
+    background-repeat:repeat-x;
+    background-position:center;
+    background-size:auto 100%;
+  }
+  .selvedge--down{
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='24' viewBox='0 0 28 24'%3E%3Crect width='28' height='2.5' fill='%23B8873B'/%3E%3Crect y='4.5' width='28' height='1' fill='%23B8873B' opacity='.55'/%3E%3Cpath d='M0 8 L14 22 L28 8 Z' fill='%23B8873B'/%3E%3C/svg%3E");
+  }
+  .selvedge--up{
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='24' viewBox='0 0 28 24'%3E%3Crect y='21.5' width='28' height='2.5' fill='%23B8873B'/%3E%3Crect y='18.5' width='28' height='1' fill='%23B8873B' opacity='.55'/%3E%3Cpath d='M0 16 L14 2 L28 16 Z' fill='%23B8873B'/%3E%3C/svg%3E");
+  }
+  .selvedge--onwine{background-color:var(--wine)}
+  .selvedge--onivory{background-color:var(--ivory)}
+
+
+  .logomark{
+    width:66px;height:66px;margin:0 auto 20px;
+    border:2.5px solid var(--gold-bright);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Rozha One',serif;
+    font-size:1.9rem;line-height:1;
+    color:var(--gold-bright);
+    letter-spacing:-.06em;
+    border-radius:3px;
+  }
+  .logomark span:first-child{transform:translateX(3px)}
+  .hero__place{
+    font-family:'Noto Serif Bengali',serif;
+    font-size:.98rem;
+    color:var(--ivory);
+    opacity:.72;
+    margin-top:6px;
+  }
+
+  /* ── hero ── */
+  .hero{
+    background:var(--wine);
+    color:var(--ivory);
+    padding:70px 0 78px;
+    text-align:center;
+  }
+  .eyebrow{
+    font-size:.72rem;
+    font-weight:600;
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    color:var(--gold-bright);
+  }
+  .hero__name{
+    font-family:'Rozha One',serif;
+    font-weight:400;
+    font-size:clamp(1.85rem,6.2vw,3.9rem);
+    line-height:1.08;
+    letter-spacing:.025em;
+    margin:16px 0 10px;
+  }
+  .hero__bengali{
+    font-family:'Noto Serif Bengali',serif;
+    font-weight:600;
+    font-size:clamp(1.1rem,3.4vw,1.6rem);
+    color:var(--gold-bright);
+    line-height:1.5;
+  }
+  .hero__line{
+    max-width:34ch;
+    margin:20px auto 0;
+    font-size:1.06rem;
+    opacity:.9;
+  }
+  .hero__email{
+    margin-top:18px;
+    font-size:1rem;
+    letter-spacing:.02em;
+  }
+  .hero__email a{
+    color:var(--gold-bright);
+    text-decoration:none;
+    border-bottom:1px solid rgba(210,162,76,.5);
+    padding-bottom:1px;
+  }
+  .hero__email a:hover{color:#E4B75F}
+
+  .actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:center;
+    margin-top:32px;
+  }
+  .btn{
+    font-family:'Hind',sans-serif;
+    font-size:1rem;
+    font-weight:600;
+    padding:13px 26px;
+    border-radius:2px;
+    text-decoration:none;
+    display:inline-block;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .btn--solid{background:var(--gold-bright);color:var(--wine-deep);border:1px solid var(--gold-bright)}
+  .btn--solid:hover{background:#E4B75F}
+  .btn--ghost{background:transparent;color:var(--ivory);border:1px solid rgba(239,227,200,.5)}
+  .btn--ghost:hover{background:rgba(239,227,200,.09)}
+  .btn:active{transform:translateY(1px)}
+
+  /* ── sections ── */
+  .section{padding:64px 0}
+  .section__head{
+    font-family:'Rozha One',serif;
+    font-weight:400;
+    font-size:clamp(1.7rem,4.2vw,2.5rem);
+    line-height:1.15;
+    margin-bottom:8px;
+  }
+  .section__sub{color:#6B5147;margin-bottom:34px;max-width:52ch}
+
+  /* ── pallu panels ── */
+  .pallu{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(172px,1fr));
+    gap:14px;
+  }
+  .panel{
+    background:var(--ivory-lift);
+    border:1.5px solid var(--gold);
+    box-shadow:inset 0 0 0 1px var(--ivory-lift), inset 0 0 0 2.5px rgba(184,135,59,.42);
+    padding:22px 18px 24px;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .panel:hover{
+    transform:translateY(-3px);
+    box-shadow:inset 0 0 0 1px var(--ivory-lift), inset 0 0 0 2.5px rgba(184,135,59,.42), 0 6px 18px rgba(92,18,36,.13);
+  }
+  .panel__name{
+    font-family:'Rozha One',serif;
+    font-weight:400;
+    font-size:1.42rem;
+    line-height:1.2;
+    color:var(--wine);
+    margin-bottom:7px;
+  }
+  .panel__desc{font-size:.94rem;line-height:1.55;color:#5C4740}
+
+
+  .panel--hero{
+    grid-column:1/-1;
+    background:var(--wine);
+    border-color:var(--gold-bright);
+    box-shadow:inset 0 0 0 2.5px rgba(210,162,76,.5);
+    padding:34px 30px 38px;
+    margin-bottom:30px;
+    text-align:center;
+  }
+  .panel--hero .panel__name{color:var(--ivory);font-size:2.3rem;margin-bottom:10px}
+  .panel--hero .panel__desc{color:var(--ivory);opacity:.9;font-size:1.05rem;max-width:46ch;margin:0 auto}
+  .panel__tag{
+    font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--gold-bright);margin-bottom:8px;
+  }
+  .pallu__label{
+    font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+    color:#6B5147;margin-bottom:14px;
+  }
+
+  /* ── banner photo band ── */
+  .banner{position:relative;background:var(--ivory-lift);overflow:hidden}
+  .banner img{display:block;width:100%;height:auto}
+  .banner__hint{display:none}
+  .banner--empty{
+    height:clamp(200px,34vw,360px);
+    display:flex;align-items:center;justify-content:center;
+    background:
+      repeating-linear-gradient(45deg,rgba(184,135,59,.06) 0 14px,transparent 14px 28px),
+      var(--ivory-lift);
+    border-top:1px solid rgba(184,135,59,.28);
+    border-bottom:1px solid rgba(184,135,59,.28);
+  }
+  .banner--empty img{display:none}
+  .banner--empty .banner__hint{
+    display:block;text-align:center;
+    font-size:.9rem;letter-spacing:.04em;color:#9A7B52;
+    border:1.5px dashed rgba(184,135,59,.5);
+    padding:14px 22px;border-radius:3px;background:rgba(247,239,220,.7);
+  }
+
+  /* ── saree gallery ── */
+  .gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+    gap:12px;
+    margin:4px 0 34px;
+  }
+  .shot{position:relative;margin:0;aspect-ratio:3/4;overflow:hidden;border-radius:3px}
+  .shot img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
+  .shot:hover img{transform:scale(1.04)}
+  .shot__hint{display:none}
+  .shot--empty{
+    background:
+      repeating-linear-gradient(45deg,rgba(184,135,59,.07) 0 12px,transparent 12px 24px),
+      var(--ivory-lift);
+    border:1.5px dashed rgba(184,135,59,.5);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .shot--empty img{display:none}
+  .shot--empty .shot__hint{
+    display:block;font-size:.74rem;letter-spacing:.05em;color:#9A7B52;
+  }
+
+
+  /* ── story ── */
+  .story{padding-bottom:40px}
+  .story__eyebrow{
+    font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--gold);margin-bottom:10px;
+  }
+  .story__body{max-width:62ch;margin-top:20px}
+  .story__body p{margin-bottom:16px;color:#4A3832;font-size:1.05rem;line-height:1.72}
+  .story__body p:last-child{margin-bottom:0}
+
+
+  /* ── product card + whatsapp ── */
+  .product{display:flex;flex-direction:column;gap:0}
+  .product .shot{aspect-ratio:3/4;margin:0;border-radius:3px 3px 0 0}
+  .wa-btn{
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    background:#1EA85C;color:#fff;text-decoration:none;
+    font-family:'Hind',sans-serif;font-weight:600;font-size:.86rem;
+    padding:9px 8px;border-radius:0 0 3px 3px;
+    transition:background .15s ease;
+  }
+  .wa-btn:hover{background:#17864A}
+  .wa-ico{font-size:.8rem;line-height:1}
+
+  /* ── visit ── */
+  .visit{
+    display:grid;
+    grid-template-columns:1.15fr 1fr;
+    gap:40px;
+    align-items:start;
+  }
+  .field{margin-bottom:22px}
+  .field__label{
+    font-size:.7rem;
+    font-weight:600;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    color:var(--indigo);
+    margin-bottom:4px;
+  }
+  .field__value{font-size:1.06rem}
+  .field__value a{color:var(--wine);text-decoration:none;border-bottom:1.5px solid var(--gold)}
+  .field__value a:hover{background:rgba(184,135,59,.16)}
+  .hours{list-style:none}
+  .hours li{
+    display:flex;
+    justify-content:space-between;
+    gap:18px;
+    padding:11px 0;
+    border-bottom:1px solid rgba(184,135,59,.32);
+  }
+  .hours li:last-child{border-bottom:0}
+  .hours span:last-child{font-weight:500}
+  .closed{color:#8A5A4E}
+
+  .btn--map{
+    background:var(--wine);
+    color:var(--ivory);
+    border:1px solid var(--wine);
+    margin-top:6px;
+  }
+  .btn--map:hover{background:var(--wine-deep)}
+
+  /* ── footer ── */
+  .foot{
+    background:var(--wine);
+    color:var(--ivory);
+    padding:44px 0 40px;
+    text-align:center;
+  }
+  .foot__name{
+    font-family:'Rozha One',serif;
+    font-size:1.5rem;
+    letter-spacing:.025em;
+    margin-bottom:8px;
+  }
+  .foot__links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 22px;
+    justify-content:center;
+    margin:16px 0 22px;
+  }
+  .foot__links a{color:var(--gold-bright);text-decoration:none;font-weight:500}
+  .foot__links a:hover{text-decoration:underline}
+  .foot__fine{font-size:.82rem;opacity:.62}
+
+  /* ── quality floor ── */
+  a:focus-visible,.btn:focus-visible{
+    outline:2.5px solid var(--gold-bright);
+    outline-offset:3px;
+  }
+
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .55s ease,transform .55s ease}
+  .reveal.seen{opacity:1;transform:none}
+
+  @media (max-width:760px){
+    .visit{grid-template-columns:1fr;gap:8px}
+    .section{padding:48px 0}
+    .hero{padding:52px 0 58px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<div class="selvedge selvedge--down selvedge--onwine"></div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="logomark" aria-hidden="true"><span>C</span><span>R</span></div>
+    <p class="eyebrow">Exclusive Saree Showroom</p>
+
+    <h1 class="hero__name">CHUNILAL RAMNARAYAN</h1>
+    <p class="hero__bengali">চুনীলাল রামনারায়ণ</p>
+    <p class="hero__place">বড়বাজার, মেদিনীপুর (পঃ) &ndash; ৭২১ ১০১</p>
+
+    <p class="hero__line">Midnapore's most trusted name in sarees for over 140 years &mdash; and garments, fabrics and furnishing for the whole family.</p>
+
+    <div class="actions">
+      <a class="btn btn--solid" href="https://wa.me/919830132233">Message on WhatsApp</a>
+      <a class="btn btn--ghost" href="tel:+919830132233">Call the shop</a>
+      <a class="btn btn--ghost" href="mailto:admin@chunilalramnarayan.in">Email us</a>
+    </div>
+    <p class="hero__email"><a href="mailto:admin@chunilalramnarayan.in">admin@chunilalramnarayan.in</a></p>
+  </div>
+</header>
+
+<div class="selvedge selvedge--up selvedge--onivory"></div>
+
+<div class="banner">
+  <img src="images/banner.jpg" alt="CHUNILAL RAMNARAYAN — 100+ years of sarees, readymade, fabrics and ethnic wear" onerror="this.closest('.banner').classList.add('banner--empty')"><span class="banner__hint">images/banner.jpg</span>
+  
+</div>
+
+<main>
+  <section class="section story">
+    <div class="wrap">
+      <p class="story__eyebrow reveal">Since 1885 &middot; Four generations</p>
+      <h2 class="section__head reveal">Midnapore's oldest saree house</h2>
+      <div class="story__body">
+        <p class="reveal">More than 140 years ago, two brothers &mdash; Shri Chunilal ji Jhawar and Shri Ramnarayan ji Jhawar &mdash; opened a small shop in Midnapore on one promise: honest prices, genuine quality, and respect for everyone who walked through the door. That shop grew into Chunilal Ramnarayan, today the oldest store in Midnapore town.</p>
+        <p class="reveal">The legacy passed to Shri Chunilal ji's son, Shri Premsukh ji Jhawar, and then to the third generation &mdash; Shri Liladhar ji Jhawar, Shri Radhakishan ji Jhawar and Shri Chand Ratan ji Jhawar &mdash; who built it into the name families across Midnapore turn to for every celebration. Today they guide the shop alongside the fourth generation of the Jhawar family.</p>
+        <p class="reveal">Four generations on, the promise hasn't changed: honest prices, genuine quality, and the kind of personal attention that turns customers into family. Come and experience the trust that generations of Midnapore families have relied on.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="selvedge selvedge--down selvedge--onivory"></div>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section__head reveal">Sarees For All Occasion</h2>
+      <p class="section__sub reveal">Our showroom is built around Sarees. Readymade Garments, Furnishing and Fabrics complete the shop.</p>
+
+      <article class="panel panel--hero reveal">
+        <p class="panel__tag">Our speciality</p>
+        <h3 class="panel__name">Sarees</h3>
+        <p class="panel__desc">Benarasi silk, Bengal’s own Baluchari and Swarnachari, Ikkat, pure silks and Tant for weddings and festivals &mdash; alongside everyday sarees for every occasion and budget.</p>
+      </article>
+
+      <div class="gallery">
+        <div class="product reveal"><figure class="shot"><img src="images/saree1.jpg" alt="Saree at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">saree1.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20saree%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+        <div class="product reveal"><figure class="shot"><img src="images/saree2.jpg" alt="Saree at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">saree2.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20saree%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+        <div class="product reveal"><figure class="shot"><img src="images/saree3.jpg" alt="Saree at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">saree3.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20saree%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+        <div class="product reveal"><figure class="shot"><img src="images/saree4.jpg" alt="Saree at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">saree4.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20saree%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+        <div class="product reveal"><figure class="shot"><img src="images/saree5.jpg" alt="Saree at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">saree5.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20saree%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+        <div class="product reveal"><figure class="shot"><img src="images/saree6.jpg" alt="Saree at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">saree6.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20saree%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="selvedge selvedge--down selvedge--onivory"></div>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section__head reveal">Ladies' Readymade</h2>
+      <p class="section__sub reveal">Salwar suits, kurtis, dress material and readymade garments.</p>
+      <div class="gallery">
+        <div class="product reveal"><figure class="shot"><img src="images/ladies1.jpg" alt="ladies at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">ladies1.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20ladies%27%20item%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+        <div class="product reveal"><figure class="shot"><img src="images/ladies2.jpg" alt="ladies at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">ladies2.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20ladies%27%20item%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+        <div class="product reveal"><figure class="shot"><img src="images/ladies3.jpg" alt="ladies at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">ladies3.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20ladies%27%20item%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+        <div class="product reveal"><figure class="shot"><img src="images/ladies4.jpg" alt="ladies at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">ladies4.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20ladies%27%20item%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="selvedge selvedge--down selvedge--onivory"></div>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section__head reveal">Gents' Readymade</h2>
+      <p class="section__sub reveal">Branded shirts, trousers, jeans, Punjabi-pyjama and dhoti.</p>
+      <div class="gallery">
+        <div class="product reveal"><figure class="shot"><img src="images/gents1.jpg" alt="gents at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">gents1.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20gents%27%20item%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+        <div class="product reveal"><figure class="shot"><img src="images/gents2.jpg" alt="gents at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">gents2.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20gents%27%20item%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+        <div class="product reveal"><figure class="shot"><img src="images/gents3.jpg" alt="gents at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">gents3.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20gents%27%20item%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+        <div class="product reveal"><figure class="shot"><img src="images/gents4.jpg" alt="gents at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">gents4.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20gents%27%20item%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="selvedge selvedge--down selvedge--onivory"></div>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section__head reveal">Furnishing &amp; Fabrics</h2>
+      <p class="section__sub reveal">Bedsheets, curtains, towels and upholstery &mdash; plus Raymonds shirting and suiting, cut to the metre.</p>
+      <div class="gallery">
+        <div class="product reveal"><figure class="shot"><img src="images/home1.jpg" alt="home at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">home1.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20furnishing%20item%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+        <div class="product reveal"><figure class="shot"><img src="images/home2.jpg" alt="home at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">home2.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20furnishing%20item%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+        <div class="product reveal"><figure class="shot"><img src="images/home3.jpg" alt="home at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">home3.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20furnishing%20item%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+        <div class="product reveal"><figure class="shot"><img src="images/home4.jpg" alt="home at Chunilal Ramnarayan" loading="lazy" onerror="this.closest('.shot').classList.add('shot--empty')"><span class="shot__hint">home4.jpg</span></figure><a class="wa-btn" href="https://wa.me/919830132233?text=Hi%2C%20I%20saw%20a%20furnishing%20item%20on%20your%20website.%20Please%20share%20more%20photos%20and%20details." target="_blank" rel="noopener"><span class="wa-ico" aria-hidden="true">●</span> WhatsApp for more</a></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="selvedge selvedge--down selvedge--onivory"></div>
+
+  <section class="section">
+    <div class="wrap visit">
+      <div>
+        <h2 class="section__head reveal">Visit us</h2>
+        <p class="section__sub reveal">We are in Barabazar, in the heart of the Midnapore market.</p>
+
+        <div class="field reveal">
+          <p class="field__label">Address</p>
+          <p class="field__value">Barabazar, Midnapore<br>Paschim Medinipur, West Bengal 721101</p>
+        </div>
+
+        <div class="field reveal">
+          <p class="field__label">Phone</p>
+          <p class="field__value">
+            <a href="tel:+919830132233">+91 98301 32233</a><br>
+            <a href="tel:+919434022893">+91 94340 22893</a>
+          </p>
+        </div>
+
+        <a class="btn btn--map reveal" href="https://www.google.com/maps/search/?api=1&amp;query=CHUNILAL+RAMNARAYAN+Barabazar+Midnapore+721101">Get directions</a>
+      </div>
+
+      <div class="reveal">
+        <p class="field__label" style="margin-bottom:14px">Opening hours</p>
+        <ul class="hours">
+          <li><span>Monday &ndash; Wednesday</span><span>10:00 am &ndash; 9:00 pm</span></li>
+          <li><span>Thursday</span><span class="closed">Closed</span></li>
+          <li><span>Friday &ndash; Sunday</span><span>10:00 am &ndash; 9:00 pm</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="selvedge selvedge--up selvedge--onwine"></div>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="foot__name">CHUNILAL RAMNARAYAN</p>
+    <p style="color:var(--gold-bright);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px">Exclusive Saree Showroom</p>
+    <p style="opacity:.8">Barabazar, Midnapore, Paschim Medinipur &ndash; 721101</p>
+
+    <div class="foot__links">
+      <a href="tel:+919830132233">+91 98301 32233</a>
+      <a href="tel:+919434022893">+91 94340 22893</a>
+      <a href="https://wa.me/919830132233">WhatsApp</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=CHUNILAL+RAMNARAYAN+Barabazar+Midnapore+721101">Directions</a>
+    </div>
+
+    <p class="foot__fine">&copy; 2026 CHUNILAL RAMNARAYAN. All rights reserved.</p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ClothingStore",
+  "name": "CHUNILAL RAMNARAYAN",
+  "description": "Sarees, Ladies' and Gents' Readymade Garments, Furnishing and Cloth by the metre.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Barabazar",
+    "addressLocality": "Midnapore",
+    "addressRegion": "West Bengal",
+    "PostalCode": "721101",
+    "addressCountry": "IN"
+  },
+  "telephone": "+919830132233",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Friday","Saturday","Sunday"],
+      "opens": "10:00",
+      "closes": "21:00"
+    }
+  ]
+}
+</script>
+
+<script>
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        e.target.style.transitionDelay = (i * 55) + 'ms';
+        e.target.classList.add('seen');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
