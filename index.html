@@ -254,6 +254,11 @@
 
 
 
+
+  /* ── svg banner ── */
+  .svgbanner{line-height:0;background:var(--wine)}
+  .svgbanner svg{display:block;width:100%;height:auto}
+
   /* ── text banner ── */
   .tbanner{
     background:var(--wine);
@@ -452,22 +457,76 @@
 
 <div class="selvedge selvedge--up selvedge--onivory"></div>
 
-<div class="tbanner">
-  <div class="wrap tbanner__wrap">
-    <p class="tbanner__tagline">Timeless Elegance, Unmatched Quality</p>
-    <div class="tbanner__badge">
-      <span class="tbanner__years">140+</span>
-      <span class="tbanner__yearslabel">Years</span>
-      <span class="tbanner__ribbon">Of Trust &amp; Tradition</span>
-    </div>
-    <p class="tbanner__cats">SAREES &middot; READYMADE &middot; FABRICS &middot; ETHNIC WEAR</p>
-    <ul class="tbanner__trust">
-      <li><strong>140+ Years</strong><span>of Heritage</span></li>
-      <li><strong>Premium</strong><span>Quality</span></li>
-      <li><strong>Customer</strong><span>Trust</span></li>
-      <li><strong>Generation</strong><span>after Generation</span></li>
-    </ul>
-  </div>
+<div class="svgbanner">
+<svg viewBox="0 0 1600 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chunilal Ramnarayan — 140+ years of trust and tradition. Sarees, readymade, fabrics and ethnic wear." preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8E9B0"/>
+      <stop offset="0.45" stop-color="#DCA94E"/>
+      <stop offset="1" stop-color="#A4712A"/>
+    </linearGradient>
+    <linearGradient id="goldBright" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF4CC"/>
+      <stop offset="1" stop-color="#D2A24C"/>
+    </linearGradient>
+    <radialGradient id="sheen" cx="0.5" cy="0.42" r="0.75">
+      <stop offset="0" stop-color="#6E1A2C"/>
+      <stop offset="1" stop-color="#4C0F1A"/>
+    </radialGradient>
+    <g id="flourish">
+      <path d="M0 0 C 40 -6 70 10 78 46 C 84 74 70 96 44 100 C 60 86 62 66 50 54 C 40 44 24 46 18 60 C 14 48 20 34 34 30 C 20 28 8 18 0 0 Z" fill="url(#gold)"/>
+      <path d="M78 46 C 110 44 134 62 138 92 C 120 80 104 82 96 96 C 92 80 86 60 78 46 Z" fill="url(#gold)" opacity="0.9"/>
+      <circle cx="44" cy="100" r="5" fill="url(#goldBright)"/>
+    </g>
+  </defs>
+
+  <!-- ground -->
+  <rect width="1600" height="600" fill="url(#sheen)"/>
+  <!-- gold frame -->
+  <rect x="26" y="26" width="1548" height="548" fill="none" stroke="url(#gold)" stroke-width="5"/>
+  <rect x="40" y="40" width="1520" height="520" fill="none" stroke="url(#gold)" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- side flourishes (where photos were) -->
+  <use href="#flourish" transform="translate(70,140) scale(1.5)"/>
+  <use href="#flourish" transform="translate(70,460) scale(1.5,-1.5)"/>
+  <use href="#flourish" transform="translate(1530,140) scale(-1.5,1.5)"/>
+  <use href="#flourish" transform="translate(1530,460) scale(-1.5,-1.5)"/>
+
+  <!-- shop name -->
+  <text x="800" y="132" text-anchor="middle" font-family="'Rozha One',serif" font-size="92" fill="url(#goldBright)" letter-spacing="2">CHUNILAL RAMNARAYAN</text>
+  <!-- divider -->
+  <line x1="470" y1="168" x2="1130" y2="168" stroke="url(#gold)" stroke-width="2"/>
+  <text x="800" y="210" text-anchor="middle" font-family="'Rozha One',serif" font-size="40" fill="#EFE3C8">Timeless Elegance, Unmatched Quality</text>
+
+  <!-- central badge -->
+  <g>
+    <rect x="600" y="248" width="400" height="150" rx="18" fill="#4C0F1A" stroke="url(#gold)" stroke-width="4"/>
+    <rect x="612" y="260" width="376" height="126" rx="12" fill="none" stroke="url(#gold)" stroke-width="1.2" opacity="0.6"/>
+    <text x="800" y="338" text-anchor="middle" font-family="'Rozha One',serif" font-size="78" fill="url(#goldBright)">140+</text>
+    <text x="800" y="372" text-anchor="middle" font-family="'Hind',sans-serif" font-weight="600" font-size="22" letter-spacing="12" fill="#EFE3C8">YEARS</text>
+    <!-- ribbon -->
+    <rect x="640" y="398" width="320" height="30" rx="2" fill="url(#gold)"/>
+    <text x="800" y="419" text-anchor="middle" font-family="'Hind',sans-serif" font-weight="600" font-size="14" letter-spacing="3" fill="#4C0F1A">OF TRUST &amp; TRADITION</text>
+  </g>
+
+  <!-- categories -->
+  <text x="800" y="478" text-anchor="middle" font-family="'Hind',sans-serif" font-weight="600" font-size="30" letter-spacing="6" fill="#EFE3C8">SAREES &#183; READYMADE &#183; FABRICS &#183; ETHNIC WEAR</text>
+
+  <!-- trust row -->
+  <g font-family="'Hind',sans-serif" fill="#EFE3C8" text-anchor="middle">
+    <text x="470" y="528" font-size="20" font-weight="600" fill="url(#goldBright)">140+ Years</text>
+    <text x="470" y="550" font-size="16">of Heritage</text>
+    <text x="690" y="528" font-size="20" font-weight="600" fill="url(#goldBright)">Premium</text>
+    <text x="690" y="550" font-size="16">Quality</text>
+    <text x="910" y="528" font-size="20" font-weight="600" fill="url(#goldBright)">Customer</text>
+    <text x="910" y="550" font-size="16">Trust</text>
+    <text x="1130" y="528" font-size="20" font-weight="600" fill="url(#goldBright)">Generation</text>
+    <text x="1130" y="550" font-size="16">after Generation</text>
+    <line x1="580" y1="520" x2="580" y2="552" stroke="url(#gold)" stroke-width="1" opacity="0.5"/>
+    <line x1="800" y1="520" x2="800" y2="552" stroke="url(#gold)" stroke-width="1" opacity="0.5"/>
+    <line x1="1020" y1="520" x2="1020" y2="552" stroke="url(#gold)" stroke-width="1" opacity="0.5"/>
+  </g>
+</svg>
 </div>
 
 <main>
